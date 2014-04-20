@@ -13,13 +13,13 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Jquery-easytext by ajorquera</title>
+    <title>EasyText For jQuery by ajorquera</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Jquery-easytext</h1>
+        <h1>EasyText For jQuery</h1>
         <h2></h2>
         <a href="https://github.com/ajorquera/jQuery-EasyText" class="button"><small>View project on</small>GitHub</a>
       </div>
@@ -28,37 +28,216 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="easytext-plugin-for-the-jquery-library-" class="anchor" href="#easytext-plugin-for-the-jquery-library-"><span class="octicon octicon-link"></span></a>EasyText Plugin for the jQuery Library </h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><img src="http://static.jortech.com.ve/easyText/image.png" alt="Image.png..."></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>EasyText is a plugin built on top of jQuery. It enhances the behaviour 
+of the HTML input element of type text. It's inspired by the input in Google 
+Contacts. It is still in beta. </p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>This plugin was built using the jQuery UI Widget Factory. For more information
+<a href="http://learn.jquery.com/jquery-ui/widget-factory/">click here</a></p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><strong>Current Version:</strong> 0.1</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li><p>Auto-resize input.</p></li>
+<li><p>Overall look of the input for intuitive editing.</p></li>
+<li><p>Store all the values the user has typed in for the session or permanently.</p></li>
+<li><p>Ajax capabilities to send requests to a RESTful service, enabling the 
+possibility to store the value in a database as soon as the user has typed in 
+a value  </p></li>
+</ul><h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li>
+<a href="http://jquery.com/">jQuery</a> </li>
+<li>
+<a href="http://jqueryui.com/">jQuery UI</a> </li>
+</ul><h2>
+<a name="browser-compatibility" class="anchor" href="#browser-compatibility"><span class="octicon octicon-link"></span></a>Browser Compatibility</h2>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>Chrome: <strong><code>34+</code></strong></p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Firefox: <strong><code>28+</code></strong></p>
+
+<p>Internet Explorer     <strong><code>Not yet tested</code></strong></p>
+
+<p>Safari     <strong><code>Not yet tested</code></strong></p>
+
+<p>Opera     <strong><code>Not yet tested</code></strong></p>
+
+<h2>
+<a name="usage-" class="anchor" href="#usage-"><span class="octicon octicon-link"></span></a>Usage </h2>
+
+
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'input[type="text"]'</span><span class="p">).</span><span class="nx">EasyText</span><span class="p">(</span><span class="nx">attributes</span><span class="p">);</span>
+</pre></div>
+
+<p><code>attributes</code> is an optional javascript object with the parameters explained 
+                 below:</p>
+
+<h2>
+<a name="attributes" class="anchor" href="#attributes"><span class="octicon octicon-link"></span></a>Attributes</h2>
+
+<ul>
+<li>
+<p><strong>maxWidth</strong> <code>number</code> <em>(Default: 200)</em> </p>
+
+<p>The maximum size in pixels for the input.</p>
+</li>
+<li>
+<p><strong>minWidth</strong> <code>number</code> <em>(Default: 80)</em> </p>
+
+<p>The minimum size for the input.</p>
+</li>
+<li>
+<p><strong>values</strong> <code>array</code></p>
+
+<p>It is an array containing all the values of the input in the same order the 
+user has typed in. The plugin will store all the values, regardless the type 
+of storage used. To delete the values, use the public method 
+<em>deleteStorage()</em></p>
+</li>
+<li>
+<p><strong>maxChars</strong> <code>number</code> <em>(Default 200)</em></p>
+
+<p>The maximum amount of characters that are allowed in the input. </p>
+</li>
+<li>
+<p><strong>storage</strong> <code>string</code> <em>(Default 'array')</em></p>
+
+<p>It can have 3 different values: </p>
+
+<ol>
+<li><p><strong>array</strong>: it will store all values from the input in an array. </p></li>
+<li><p><strong>localStorage</strong>: it will store all the values in the browser local storage 
+               so it can be accessed later</p></li>
+<li><p><strong>ajax</strong>: It uses ajax capabilities to send request to a RESTful service. 
+       This way,the value can be store in a database behind the scenes.
+       For more information about RESTful philosophy see the wiki page 
+       -&gt; <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a></p></li>
+</ol>
+</li>
+</ul><ul>
+<li>
+<p><strong>ajaxConfig</strong> </p>
+
+<p>Single level object that contains:</p>
+
+<ul>
+<li><p><strong>url</strong>:<code>string</code> the url where to send the RESTful requests; 
+     e.g., <code>domain/API/</code></p></li>
+<li><p><strong>id</strong>:<code>string</code> The identification string to form the uri; 
+    e.g., <code>domain/API/id</code></p></li>
+<li>
+<p><strong>GETCallback</strong>:<code>function</code> it process the GET request response. 
+             This function corresponds to the success parameter in the 
+             $.ajax() method described 
+             <a href="https://api.jquery.com/jQuery.ajax/">here</a>. If this 
+             parameter is not set, the plugin will not send a GET 
+             request when it is instantiated. The parameters are:</p>
+
+<ul>
+<li><p><strong>data:</strong> <code>PlainObject</code>javaScript object containing zero or more 
+        key-value pairs. </p></li>
+<li><p><strong>status:</strong> <code>String</code> a string describing the status of the 
+          request. More <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">Info</a>.</p></li>
+<li>
+<strong>jqXHR:</strong> <code>jqXHR</code>  a superset of the browser's native 
+         XMLHttpRequest object. More <a href="http://api.jquery.com/jQuery.ajax/#jqXHR">info</a>.</li>
+</ul>
+<p>e.g.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="kd">function</span> <span class="nx">callback</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span><span class="nx">status</span><span class="p">,</span><span class="nx">jqXHR</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//code...</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+<li><p><strong>UPDATETemplate</strong>: <code>string</code> string using John's Resig javascript 
+            <a href="http://ejohn.org/blog/javascript-micro-templating/">Micro-Templating</a> 
+            function. Using this templating system, allows to transfer 
+            any information using any type of format like for example 
+            JSON,XML,YAML,etc. For refering to the input's value, in the 
+            string should be a value key that will be replace with actual
+            value. e.g. "&lt;%= value %&gt;"</p></li>
+<li><p><strong>UPDATEData</strong>: <code>PlainObject</code> javaScript object containing zero or 
+              more key-value pairs. 
+              It will contain all the parameters for the UPDATETemplate. 
+              For each request, the object will contain the actual value
+              of the input in the form " value: 'string' "</p></li>
+</ul>
+</li>
+</ul><h2>
+<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<ul>
+<li><p><strong>getNextBackValue:</strong>
+gets the previous or the next value of all the values that have been store in 
+the values attribute. Has a direction parameter that acts like a flag. If it is 
+true it will get the next value otherwise the previous one. Return -1 if it gets
+to the extreme of the array.</p></li>
+<li>
+<p><strong>deleteStorage</strong>
+It will delete all the saved values. It will have different behaviours depending 
+on the type of storage.</p>
+
+<ul>
+<li>
+<strong>array</strong>: it will delete the values store in the values attribute.</li>
+<li>
+<strong>localStorage</strong>: it will delete the information store in the browser's local storage</li>
+<li>
+<strong>ajax</strong>: it will send a delete request to the RESTful service.</li>
+</ul>
+</li>
+</ul><h4>
+<a name="method-invocation" class="anchor" href="#method-invocation"><span class="octicon octicon-link"></span></a>Method Invocation</h4>
+
+<p>Because the plugin uses the jQuery UI Widget Factory, there are two especific 
+ways of calling the public methods. More
+<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">information</a>. </p>
+
+<h5>
+<a name="plugin-invocation" class="anchor" href="#plugin-invocation"><span class="octicon octicon-link"></span></a>Plugin Invocation</h5>
+
+<p>To invoke a method using the widget's plugin, pass the name of the method as a 
+string. If the method requires arguments, pass them as additional parameters 
+to the plugin.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'input[type="text"]'</span><span class="p">).</span><span class="nx">easyText</span><span class="p">(</span><span class="s1">'getNextBackValue'</span><span class="p">,</span><span class="s1">'true'</span><span class="p">)</span>
+</pre></div>
+
+<h5>
+<a name="instance-invocation" class="anchor" href="#instance-invocation"><span class="octicon octicon-link"></span></a>Instance Invocation</h5>
+
+<p>Under the hoods, every instance of every widget is stored on the element using 
+<a href="http://api.jquery.com/jQuery.data/">jQuery.data()</a>. To retrieve the instance 
+object, call jQuery.data() using the 
+widget's full name "easyInputEasyText".</p>
+
+<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">jQueryObject</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'input[type="text"]'</span><span class="p">).</span><span class="nx">easyText</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">easyText</span> <span class="o">=</span> <span class="nx">jQueryObject</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'easyInputEasyText'</span><span class="p">);</span>
+
+<span class="nx">easyText</span><span class="p">.</span><span class="nx">deleteStorage</span><span class="p">();</span>
+
+</pre></div>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>You can see an example in the following 
+<a href="http://static.jortech.com.ve/easyText/jQuery/demo/">link</a>.</p>
         </section>
 
         <aside id="sidebar">
