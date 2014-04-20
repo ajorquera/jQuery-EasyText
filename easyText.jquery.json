@@ -1,0 +1,35 @@
+{ 
+    "name":"easyText",
+    "version":"0.1.0",
+    "title":"Easy text input for the web.",
+    "description":"It enhances the behaviour of the HTML input element of type text, offering some unique features",
+    "author":{
+        "name":"Andres Jorquera",
+        "email":"jorquerad@jortech.com.ve",
+        "url":"ajorquera.jortech.com.ve"
+    },
+    "keywords":[
+        "input",
+        "text",
+        "ajax",
+        "autogrown",
+        "ui",
+        "form"
+    ],
+        
+    "licenses":[
+        {
+            "type": "MIT",
+            "url": "https://github.com/ajorquera/jQuery-EasyText/LICENSE.md"
+        }
+    ],
+    "download": "https://github.com/ajorquera/jQuery-EasyText/releases",
+    "homepage": "http://ajorquera.jortech.com.ve/proyects/easytext/",
+    "bugs": "https://github.com/ajorquera/jQuery-EasyText/issues",
+    "dependencies": {
+        "jquery": ">=1.10.0",
+        "jquery-ui":">=1.10.0"
+        
+    }
+
+}

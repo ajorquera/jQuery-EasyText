@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EasyText Plugin</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <h1>EasyText Testing ...</h1>
+
+        <h3>Default</h3>
+        <input type="text" id="easyText1" />
+
+        <h3>Changing the default attributes..</h3>
+        <ul>
+            <li>minWidth: 40</li>
+            <li>maxWidth: 300</li>
+            <li>maxChars: 60</li> 
+        </ul>
+        <input type="text" id="easyText2"/>
+
+        <h3>Storage Feature</h3>
+        <ul>
+            <li class="easyText3">
+                <h4>Array</h4>
+                <p>
+                   This is the default feature for the plugin. Each time a user 
+                   inserts text into the input. Each entry will be store into an 
+                   array that can belater use to restore its value. 
+                </p>
+                <input type="text" id="easyText3"/>
+                <br /><br />
+                <button id="back">&#060;</button>
+                <button id="next">&#062;</button>
+                <button id="deleteStorage">Delete Storage</button>
+            </li>
+            <li class="easyText4">
+                <h4>LocalStore</h4>
+                <p>
+                   This feature allows to keep the input values in the browser
+                   local storage. If you close or refresh the web page you could
+                   still have access to the input values
+                </p>
+                <input type="text" id="easyText4"/>
+                <br /><br />
+                <button id="back">&#060;</button>
+                <button id="next">&#062;</button>
+                <button id="deleteStorage">Delete Storage</button>
+            </li>
+            <br />
+            <li class="easyText5">
+                <h4>Ajax Support</h4>
+                <p>
+                    This feature uses the RESTful filosofy, so the values may be
+                    store in a database. If you use your browser debugger tool,
+                    you could see that the input is making a GET request when it
+                    initializes, an UPDATE request when you change the input's
+                    value and a DELETE request when using the deleteStorage()
+                    public method.
+                </p>
+                <input type="text" id="easyText5"/><br /><br />
+                <button id="deleteStorage">Delete Storage</button>
+            </li>
+        </ul>
+
+
+        <!--Scripts-->
+        <script src="jquery.easyText.js"></script>
+        <script src="testing.js"></script>
+    </body>
+</html>

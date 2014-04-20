@@ -1,0 +1,25 @@
+/*Tips
+    - Having a border, move slightly the element, so we put a transparent border.
+      ref: http://stackoverflow.com/questions/8625812/css-hover-border-makes-inline-elements-adjust-slightly
+*/
+
+.easytext-empty {
+    border:1px solid #C7C5C5;
+}
+
+.easytext-onEdit {
+    /*reference http://stackoverflow.com/questions/4750477/input-focus-outer-glow*/
+    border:1px solid #C7C5C5;
+    -webkit-box-shadow:0 0 6px #007eff;
+    -moz-box-shadow:0 0 5px #007eff;
+    box-shadow:0 0 5px #007eff;
+    outline: none;
+}
+
+.easytext:hover {
+    border:1px solid #C7C5C5;
+}
+
+.easytext-changed {
+    border:1px solid transparent;
+}
