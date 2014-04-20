@@ -1,6 +1,6 @@
 { 
     "name":"easyText",
-    "version":"0.1.1",
+    "version":"0.1.2",
     "title":"easyText",
     "description":"Plugin that enhances the behaviour of the HTML input element of type text, offering some unique features. It provides ajax and localStorage capabilities for saving the input's value",
     "author":{
