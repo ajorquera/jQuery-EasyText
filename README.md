@@ -2,7 +2,7 @@ EasyText Plugin for the jQuery Library
 =======================================
   
 <!---Image-->
-![Image.png...](http://static.jortech.com.ve/easyText/image.png)
+![Image.png...](http://static.jortech.com.ve/jquery-easytext/image.png)
   
 EasyText is a plugin built on top of jQuery. It enhances the behaviour 
 of the HTML input element of type text. It's inspired by the input in Google 
@@ -186,5 +186,5 @@ easyText.deleteStorage();
 Demo
 --------------------------------------------------------------------------------
 You can see an example in the following 
-[link](http://static.jortech.com.ve/easyText/jQuery/demo/).
+[link](http://static.jortech.com.ve/jquery-easytext/).
 
